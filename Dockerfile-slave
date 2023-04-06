@@ -8,5 +8,5 @@ EXPOSE 1099-1104 50000-50004
 		
 ENTRYPOINT $JMETER_HOME/bin/jmeter-server \
 -Dserver.rmi.localport=${RMI_SERVER_PORT} \
--Dserver_port=$SERVER_PORT \
+-Dserver_port=${SERVER_PORT} \
 -Jserver.rmi.ssl.disable=true
